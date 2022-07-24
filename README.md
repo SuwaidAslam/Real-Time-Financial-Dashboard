@@ -1,7 +1,7 @@
 # Real Time Financial Dashboard
 A Live Financial Dashboard, developed to show financial data live and we can also view data from the past. This dashboard is based on two python scripts, one script gets the data from the API and saves it into Mysql database, and the other script has all the code for the dashboard. Dashboard script gets the data from Mysql database which is inserted every 5 seconds in the database, and displays that real time financial information onto the dashboard, using Line charts and Tree Maps.
 
-Tree Map charts sizes are not fixed, the height of the Tree Maps as the data for Tree Maps changes.
+Tree Map charts sizes are not fixed, the height of the Tree Maps changes as the data for Tree maps changes.
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![pythonbadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
