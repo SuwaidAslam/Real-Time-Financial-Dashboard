@@ -116,9 +116,9 @@ def insertAccountsData():
                             negative_market_stocks.append(float(stock.market_value))
                             
                 negative_market_stocks = [abs(item) for item in negative_market_stocks]
-
-                long_market_value_stock = long_market_value_last_equity - sum(positve_market_stocks)
-                short_market_value_stock = short_market_value_last_equity - sum(negative_market_stocks)
+                
+                long_market_value_stock = (float(account.long_market_value) - sum(positve_market_stocks))/float(account.last_equity)
+                short_market_value_stock = (abs(float(account.short_market_value)) - sum(negative_market_stocks))/float(account.last_equity)
 
                 # inserting all values to database
                 val = (account.account_blocked, account.account_number, account.accrued_fees, account.buying_power, account.cash,
